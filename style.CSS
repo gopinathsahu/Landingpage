@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.nav-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-list li{
+    list-style: none;
+    padding: 15px 10px;
+}
+.nav-list li a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #e8dfdf;
+    padding: 7px 3px;
+    margin: 11px;
+    transition: all .3s ease-in-out;
+}
+.nav-list li a:hover{
+    color: rgb(59, 58, 58);
+    background-color: rgb(216, 211, 211);
+    border-radius: 8px;
+    font-weight: bold;
+    font-stretch:ultra-condensed;       
+}
+.logo img{
+   width: 160px;
+}
+.rightnav{
+    width: 40%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 27px 5px 4px;
+}
+.search-image{
+    width: 20px;
+    /* position: absolute;
+    right: 16px;
+    bottom: 30px; */
+}
+.search-image:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+.search-image:active{
+    transform: scale(.80);
+}
+.background{
+    background: rgba(0,0,0,0.5)  url('../css/animation.css');
+    animation: Liza 100s infinite ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    
+}
+
+.boxMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column-reverse;
+    margin: auto;
+    height: 65%;
+}
+.firstLeft>img{
+    position: absolute;
+    width: 400px;
+    margin-left: 390px;
+    top: 35%;
+}
+.firstRight>img{
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+.firstSection{
+    height: 100vh;
+}
+.big-text{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: -6px 0px 0px #0083ff;
+    letter-spacing: 5px;
+    font-family: 'Acme', sans-serif;
+}
+.small-text{
+    font-size: 60px;
+    text-transform: uppercase;
+    background-blend-mode: darken;
+}
+.tour-quote{
+    font-size: 25px;
+    color: #eeeeee;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 25px;
+    text-shadow: 3px  2px 5px black;
+    text-align: center;
+}
+.change_text::after{
+    content: '';
+    animation:text 100s infinite linear;
+    color: cyan;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.signUp-btn{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #82afbd;
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.signUp-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(248, 248, 248);
+    color: black;
+}
+.signIn-btn{
+    text-decoration: none;
+    color: white;
+   padding: 8px 20px;
+   cursor: pointer;
+   margin-left: 10px;
+   background-color: #82afbd;
+   transition: all 0.2s ease-out;
+   font-weight: bold;
+   border-radius: 10px;
+}
+.signIn-btn:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+    background-color: white;
+    color: black;
+}
+.arrow img{
+    width: 40px;
+    border-radius: 18px;
+    opacity: 0.1;
+}
+.down-arrow{
+    position: fixed;
+    right: 18px;
+    bottom: 11px;
+}
+.down-arrow:hover{
+    background-color: lightgray;
+    opacity: 1;
+}
+.down-arrow:active{
+    background-color: darkgray;
+}
+.upper-arrow{
+    position: fixed;
+    right: 18px;
+    bottom: 54px;
+}
+.upper-arrow:hover{
+    background-color: lightgray;
+    opacity: 1;
+}
+.upper-arrow:active{
+    background-color: darkgray;
+}
+#our-services h1{
+    text-shadow: -4px 2px 3px darkslategrey;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.car-booking{
+    height: auto;
+    margin-top: 20px;
+    font-family: sans-serif;
+    z-index: 0.5;
+}
+.car-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.road-image1{
+    height: 230px;
+}
+.road-image2{
+    height: 230px;
+    float: right;
+}
+.five-car{
+    width: 770px;
+}
+.booking-heading{
+    text-align: center;
+    word-spacing: 10px;
+    margin-bottom: 10px;
+}
+.car-information-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.car-image-container{
+    margin-top: auto;
+}
+.car-image-container:hover{
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    margin-top: auto;
+    border-radius: 102px 102px 50px 50px;
+    background-color: #f5f3f0;
+}
+.car-image-container:hover>.car-image{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out; 
+}
+.car-para{
+    /* border: 2px solid black; */
+    max-width: 90%;
+    margin: auto;
+}
+.car-para p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height-step: 60;
+    word-spacing: 5px;
+}
+.car-image{
+    width: 320px;
+    height: 160px;
+    display: block;
+    margin: auto;  
+}
+.car-name{
+    text-align: center;
+    font-stretch: semi-condensed;
+}
+.car-name img{
+    width: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cab-link{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ola{
+    width: 130px;
+}
+.uber{
+    width: 100px;
+}
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    flex-direction: column;
+    background-blend-mode: darken;
+}
+.darziling-section{
+    background: rgba(0,0,0,0.5) url('./image/darziling.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.goa-section{
+    background: rgba(0,0,0,0.5) url('./image/goa\ beach.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.jagannath-section{
+    background: rgba(0,0,0,0.5) url('./image/jagannath.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.kedarnath-section{
+    background: rgba(0,0,0,0.5) url('./image/kedarnath.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.manali-section{
+    background: rgba(0,0,0,0.5) url('./image/manali.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.munnar-section{
+    background: rgba(0,0,0,0.5) url('./image/munnar.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+.ooty-section{
+     background: rgba(0,0,0,0.5) url('./image/ooty.jpg') no-repeat center center fixed;
+     background-size:cover;
+}
+.shimla-section{
+     background: rgba(0,0,0,0.5) url('./image/Shimla.jpg') no-repeat center center fixed;
+     background-size:cover;
+}
+.vizag-section{
+     background: rgba(0,0,0,0.5) url('./image/vizag.jpg') no-repeat center center fixed;
+     background-size:cover;
+}
+.kullu-section{
+     background: rgba(0,0,0,0.5) url('./image/manali1.jpg') no-repeat center center fixed;
+     background-size:cover;
+}
+.about-image{
+    width: 360px;
+    height: 260px;
+    border: 4px solid white;
+    border-radius: 30px;
+}
+.about-image:hover{
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+.about-image:active{
+    transform: scale(1);
+    transition: 0s;
+}
+.second-heading{
+    font-size: 30px;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    margin: 10px;
+   
+}
+.first-para{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* background: lightgoldenrodyellow; */
+}
+.second-para{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 16px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: lavender;
+    border-radius: 40px;
+}
+.about2{
+    flex-direction: row-reverse;
+}
+.about4{
+    flex-direction: row-reverse;
+}
+.about6{
+    flex-direction: row-reverse;
+}
+.about8{
+    flex-direction: row-reverse;
+}
+.about10{
+    flex-direction: row-reverse;
+}
+.contact{
+    height: 100vh;
+    background-color: #f5f5f5;
+
+}
+.contact-heading{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    padding: 20px;
+}
+.contact-flexing{
+    display: flex;
+    
+}
+.contact-map{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.contact-box{
+    max-width: 350px;
+    margin: 20px auto;
+}
+.contact-box input{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: 0px 0px 5px black;
+    shape-rendering: geometricPrecision;
+}
+#name{
+    text-transform: uppercase;
+}
+#email{
+    text-transform: lowercase;
+}
+.contact-box input:last-child{
+    width: 80px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.contact-box input:last-child:hover{
+    background-color: lightgreen;
+    color: black;
+    transform: scale(1.1);
+}
+.contact-box input:last-child:active{
+    background-color: green;
+}
+.contact-socialLogo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 80%;
+}
+.contact-socialLogo img{
+    width: 60px;
+    margin: 15px;
+}
+.facebook{
+    position: relative;
+    right: 180%;
+}
+.instagram{
+    position: relative;
+    left: 180%;
+}
+.linked_in{
+    position: relative;
+    right: 180%;
+}
+.contact-socialLogo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#text{
+    width: 350px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px black;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.footer{
+    height: 15vh;
+    background-color: rgb(86, 119, 121);
+}
+.footer-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}

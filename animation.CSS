@@ -1,0 +1,24 @@
+@keyframes gopinath{
+    0.1%{background-image: url('..//landing\ page\ 2/jagannath.jpg');}
+    10%{background-image: url('..//landing\ page\ 2/konark.jpg');}
+    20%{background-image: url('..//landing\ page\ 2/goa.jpg');}
+    30%{background-image: url('..//landing\ page\ 2/darziling.jpg');}
+    40%{background-image: url('..//landing\ page\ 2/');}
+    50%{background-image: url('./image/munnar.jpg');}
+    60%{background-image: url('./image/ooty.jpg');}
+    70%{background-image: url('./image/Shimla.jpg');}
+    80%{background-image: url('./landing\page\2/vizag.jpg');}
+    100%{background-image: url('./image/manali1.jpg');}
+}
+@keyframes text{
+    0.1%{content: "Darziling";}
+    10%{content: "Goa Beach";}
+    20%{content: "Jagannath Temple";}
+    30%{content: "Kedarnath";}
+    40%{content: "Manali";}
+    50%{content: "Munnar";}
+    60%{content: "Ooty Hill Station";}
+    70%{content: "Shimla Hill Station";}
+    80%{content: "Vizag";}
+    100%{content: "KULLU VALLEY";}
+}
